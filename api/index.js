@@ -5,7 +5,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "*",
+    origin: ["https://client-steel-gamma.vercel.app/api"],
   })
 );
 
