@@ -1,6 +1,13 @@
 const express = require("express");
+const cors = require("cors");
 
 const app = express();
+
+express.use(
+  cors({
+    origin: "*",
+  })
+);
 
 app.get("/", (req, res) => {
   res.send("Hi Now you are seeing home page on server side");
