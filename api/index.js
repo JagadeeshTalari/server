@@ -3,9 +3,9 @@ const cors = require("cors");
 
 const app = express();
 
-express.use(
+app.use(
   cors({
-    origin: "*",
+    origin: "https://client-steel-gamma.vercel.app/",
   })
 );
 
